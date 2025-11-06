@@ -26,8 +26,8 @@ document
         div.innerHTML = `
            <div class="">
               <h1 class="bg-[#F5F1DC] text-[#FF8040] font-bold text-center text-xl"><i class="fa-solid fa-money-bill-trend-up"></i> Added Money ${selectedBank}</h1>
-              <h3 class="bg-[#0046FF] text-[#FF8040] font-bold text-center"><i class="fa-solid fa-money-bill-trend-up"></i>  ${amount}</h3>
-              <p class=" bg-[#0046FF] text-white font-bold text-center" ><i class="fa-solid fa-building-columns"></i> Account Number: ${accountNumber}</p>
+              <h3 class="bg-[#0A400C] text-[#FF8040] font-bold text-center"><i class="fa-solid fa-money-bill-trend-up"></i>  ${amount}</h3>
+              <p class=" bg-[#0A400C] text-white font-bold text-center" ><i class="fa-solid fa-building-columns"></i> Account Number: ${accountNumber}</p>
            </div>
           `;
         container.appendChild(div);
