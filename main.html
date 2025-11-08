@@ -216,14 +216,17 @@
               <h1>Transfer</h1>
             </div>
             <!-- box 4 -->
-            <div class="box border p-2 text-center rounded-lg border-gray-500">
+            <div id="pricing" class="box border p-2 text-center rounded-lg border-gray-500">
               <img class="w-9 mx-auto" src="./assets/bonus1.png" alt="" />
-              <h1>Get Bonus</h1>
+              <h1>Pricing</h1>
             </div>
             <!-- box 5 -->
-            <div class="box border p-2 text-center rounded-lg border-gray-500">
-              <img class="w-9 mx-auto" src="./assets/purse1.png" alt="" />
-              <h1>Pay Bill</h1>
+            <div
+              id="users-info"
+              class="box border p-2 text-center rounded-lg border-gray-500"
+            >
+              <img class="w-9 mx-auto" src="./assets/team_123415.png" alt="" />
+              <h1>Users Info</h1>
             </div>
             <!-- box 6 -->
             <div
@@ -306,6 +309,90 @@
             </div>
           </section>
 
+          <!-- cashout Section -->
+          <section id="cashout" class="bg-gray-50 text-center">
+            <h2
+              class="font-bold text-xl text-center bg-[#FF9D3D] p-2 px-10 text-white rounded-lg inline-block mt-2 text-[#]"
+            >
+              <i class="fa-solid fa-money-bill-transfer"></i> Cashout
+            </h2>
+
+            <!-- animation Button -->
+            <div class="relative left-70 bottom-12">
+              <span class="absolute flex size-3">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex size-3 rounded-full bg-sky-500"
+                ></span>
+              </span>
+            </div>
+
+            <div class="">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-[#FFFFFF] w-full max-w-sm shrink-0">
+                  <div class="card-body">
+                    <fieldset class="fieldset">
+                      <label class="label text-black">Agent Number</label>
+                      <input
+                        id="cashout-account"
+                        type="email"
+                        class="input bg-gray-50 rounded-full"
+                        placeholder="Enter 11 Digit account number"
+                      />
+                      <label class="label text-black">Amount</label>
+                      <input
+                        id="cashout-amount"
+                        type="number"
+                        class="input bg-gray-50 rounded-full"
+                        placeholder="Add Amount to Withdraw"
+                      />
+                      <label class="label text-black">Pin Number</label>
+                      <input
+                        id="cashout-pin"
+                        type="number"
+                        class="input bg-gray-50 rounded-full"
+                        placeholder="Enter 4 digit Pin Number"
+                      />
+                      <div><a class="link link-hover">Forgot password?</a></div>
+                      <button
+                        id="withdraw-btn"
+                        class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-full"
+                      >
+                        Withdraw Money
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- transection-history -->
+          <section class="text-center mb-5" id="transection-history">
+            <h1
+              class="font-bold text-xl text-center bg-[#FF9D3D] p-2 px-10 text-white rounded-lg inline-block mt-2 text-[#]"
+            >
+              <i class="fa-solid fa-clock-rotate-left"></i> Transection History
+            </h1>
+            <!-- animation Button -->
+            <div class="relative left-83 bottom-12">
+              <span class="absolute flex size-3">
+                <span
+                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex size-3 rounded-full bg-sky-500"
+                ></span>
+              </span>
+            </div>
+            <div id="transection-container"></div>
+          </section>
+        </section>
+
+        <!-- users info -->
+        <section id="usersInfo">
           <!-- user info -->
 
           <div class="">
@@ -410,76 +497,17 @@
               </div>
             </div>
           </div>
+        </section>
 
-          <!-- cashout Section -->
-          <section id="cashout" class="bg-gray-50 text-center">
-            <h2
-              class="font-bold text-xl text-center bg-[#FF9D3D] p-2 px-10 text-white rounded-lg inline-block mt-2 text-[#]"
+        <!-- pricing -->
+        <section id="pricIng" class="">
+           <h1
+              class="font-bold text-xl text-center bg-[#FF9D3D] p-2 px-10 text-white rounded-lg inline-block mt-2 text-[#] mx-25"
             >
-              <i class="fa-solid fa-money-bill-transfer"></i> Cashout
-            </h2>
-
-            <!-- animation Button -->
-            <div class="relative left-70 bottom-12">
-              <span class="absolute flex size-3">
-                <span
-                  class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"
-                ></span>
-                <span
-                  class="relative inline-flex size-3 rounded-full bg-sky-500"
-                ></span>
-              </span>
-            </div>
-
-            <div class="">
-              <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="card bg-[#FFFFFF] w-full max-w-sm shrink-0">
-                  <div class="card-body">
-                    <fieldset class="fieldset">
-                      <label class="label text-black">Agent Number</label>
-                      <input
-                        id="cashout-account"
-                        type="email"
-                        class="input bg-gray-50 rounded-full"
-                        placeholder="Enter 11 Digit account number"
-                      />
-                      <label class="label text-black">Amount</label>
-                      <input
-                        id="cashout-amount"
-                        type="number"
-                        class="input bg-gray-50 rounded-full"
-                        placeholder="Add Amount to Withdraw"
-                      />
-                      <label class="label text-black">Pin Number</label>
-                      <input
-                        id="cashout-pin"
-                        type="number"
-                        class="input bg-gray-50 rounded-full"
-                        placeholder="Enter 4 digit Pin Number"
-                      />
-                      <div><a class="link link-hover">Forgot password?</a></div>
-                      <button
-                        id="withdraw-btn"
-                        class="btn btn-neutral mt-4 bg-[#0874F2] border-none rounded-full"
-                      >
-                        Withdraw Money
-                      </button>
-                    </fieldset>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- transection-history -->
-          <section class="text-center mb-5" id="transection-history">
-            <h1
-              class="font-bold text-xl text-center bg-[#FF9D3D] p-2 px-10 text-white rounded-lg inline-block mt-2 text-[#]"
-            >
-              <i class="fa-solid fa-clock-rotate-left"></i> Transection History
+              <i class="fa-solid fa-clock-rotate-left"></i> Pricing
             </h1>
             <!-- animation Button -->
-            <div class="relative left-83 bottom-12">
+            <div class="relative left-67 bottom-12">
               <span class="absolute flex size-3">
                 <span
                   class="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"
@@ -489,9 +517,254 @@
                 ></span>
               </span>
             </div>
-            <div id="transection-container"></div>
-          </section>
+          <div class="max-w-sm">
+            <div class="text-center text-4xl">🚀</div>
+            <h3 class="text-center pt-4 text-lg font-bold text-gray-900">
+              SOLO<br />
+            </h3>
+            <p class="text-center mt-3 text-sm font-normal text-gray-600">
+              Best for independent developers
+            </p>
+            <div class="flex items-end justify-center mt-6">
+              <p class="text-5xl font-bold text-gray-900">14$</p>
+              <p class="text-lg font-medium text-gray-400">/month</p>
+            </div>
+            <svg
+              class="w-full h-4 mx-auto mt-8 text-gray-300 sm:mx-0"
+              viewBox="0 0 172 16"
+              fill="none"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 81 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 116 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 151 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 18 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 53 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 88 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 123 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 158 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 25 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 60 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 95 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 130 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 165 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 32 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 67 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 102 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 137 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 172 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 39 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 74 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 109 1)"
+              ></line>
+              <line
+                y1="-0.5"
+                x2="18.0278"
+                y2="-0.5"
+                transform="matrix(-0.5547 0.83205 0.83205 0.5547 144 1)"
+              ></line>
+            </svg>
+            <div class="mx-20">
+              <ul class="mt-6 space-y-3 text-base font-medium text-gray-900">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  500 Monthly Active Users
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  1 GB/mo of Storage
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  25 GB/mo of Bandwidth
+                </li>
+                <li class="flex items-center text-gray-400">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  Limited Reporting
+                </li>
+              </ul>
+            </div>
+            <a
+              href="#"
+              target="_blank"
+              title="Register on Capgo"
+              class="w-full inline-flex items-center justify-center px-4 py-3 mt-10 text-base font-bold text-gray-900 transition-all duration-200 bg-transparent border border-gray-400 rounded hover:bg-gray-900 hover:text-white focus:bg-gray-900 focus:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button"
+            >
+              Start trial
+            </a>
+          </div>
         </section>
+
         <!-- FAB/ Speed Dial -->
 
         <!-- footer -->
